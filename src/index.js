@@ -8,5 +8,5 @@ module.exports = function towelSort (matrix) {
         newarr.push(matrix[i][j]);
     }
   }
-  return newarr;
+  return newarr.sort((a, b) => a - b);
 }
