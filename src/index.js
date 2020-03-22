@@ -9,5 +9,7 @@ module.exports = function towelSort (matrix) {
     }
   }
   var res = [].concat(...matrix);
-  return res.sort((a, b) => a - b);
+  res.sort(function(a, b) {
+    return a - b;
+  })
 }
