@@ -10,5 +10,5 @@ module.exports = function towelSort (matrix) {
         p++;
     }
   }
-  return newarr.sort((a, b) => a - b);
+  return newarr;
 }
