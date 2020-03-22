@@ -3,13 +3,10 @@
 
 module.exports = function towelSort (matrix) {
   var newarr = [];
-  var p = 0;
-  for(i = 1; i < matrix.length; i++) {
+  for(i = 0; i < matrix.length; i++) {
     for(j = 0; j < matrix[i].length; j++) {
-        newarr[p] = matrix[i][j];
-        p++;
+        newarr.push(matrix[i][j]);
     }
   }
-  var result = [].concat(...matrix);
-  return result;
+  return newarr;
 }
