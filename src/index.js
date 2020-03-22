@@ -10,6 +10,6 @@ module.exports = function towelSort (matrix) {
         p++;
     }
   }
-  var result = [].convat(...matrix);
+  var result = [].concat(...matrix);
   return result;
 }
