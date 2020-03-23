@@ -7,9 +7,9 @@ module.exports = function towelSort (matrix) {
       return [];
   for(i = 1; i <= matrix.length; i++) {
     if(i % 2 == 0)
-        result = result.concat(matrix[i - 1].reverse());
+        result = result.concat(matrix[i-1].reverse());
     else
-        result = result.concat(matrix[i - 1]);
+        result = result.concat(matrix[i-1]);
   }
   return result;
 }
