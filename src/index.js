@@ -4,7 +4,10 @@
 module.exports = function towelSort (matrix) {
   var result = [];
   for(i = 1; i < matrix.length; i++) {
-    result = result.concat(matrix[i - 1]);
+    if(i % 2 == 0)
+        result = result.concat(matrix[i - 1]);
+    else
+        result = result.concat(matrix[i - 1].reverse());
   }
-  return result.sort((a, b) => a - b);
+  return result;
 }
