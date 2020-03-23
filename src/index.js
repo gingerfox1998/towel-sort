@@ -3,5 +3,5 @@
 
 module.exports = function towelSort (matrix) {
   var newarr = [].concat(...matrix);
-  return newarr;
+  return matrix.flat(Infinity);
 }
